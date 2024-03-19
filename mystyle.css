@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    max-width: 800px;
+    margin: 60px auto;
+    height: 1250px;
+    padding: 20px;
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    margin-bottom: 10px;
+}
+.header h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.img-area{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+}
+.img-area img{
+    width: 100%;
+}
+.main{
+    flex-wrap: wrap;
+    display: grid;
+}
+.left{
+    flex: 1;
+    padding: 30px;
+}
+.left p{
+    line-height: 2;
+}
+.left ul li{
+    line-height: 2;
+}
+h2{
+    background: #00b6c4;
+    padding:15px 50px;
+    color: #fff;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+}
+.right{
+    flex: 1;
+    padding: 30px;
+}
+.right h3{
+    margin-bottom: 15px;
+}
+.right p{
+    line-height: 2.9;
+}
+.right ul li{
+    line-height: 2;
+}
+.merge-container {
+    width: 100%;
+    display: flex;
+}
+
+.merge {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.work-experience {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.work-experience img {
+    max-width: 100px;
+    margin-right: 20px;
+    width: auto;
+    border-radius: 5%;
+}
+
+.work-experience-content {
+    flex: 1;
+}
+
+
+
+.work-experience-content ul {
+    list-style-type: disc;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .merge-container {
+        flex-direction: column;
+    }
+
+    .merge {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .left,
+    .right{
+        flex: none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+        height: auto;
+    }
+    h2{
+        font-size: 15px;
+
+    }
+}
